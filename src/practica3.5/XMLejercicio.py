@@ -112,6 +112,17 @@ def mostrar_datos(raiz: ET.Element):
 
     print("--- Fin del Contenido ---")
 
+def inicializar_datos(nombre_fichero: str):
+    try:
+        arbol = ET.parse(nombre_fichero)
+        arbol.write("src/practica3.5/datos_usuarios.xml", encoding="utf-8", xml_declaration=True)
+    except FileNotFoundError:
+        print("ERROR: Archivo no encontrado.")
+    except ET.ParseError:
+        print("ERROR: Problemas al analizar el archivo XML.")
+    except Exception as e:
+        print(f"ERROR: {e}.")
+
 def main():
     """
     Función principal.
