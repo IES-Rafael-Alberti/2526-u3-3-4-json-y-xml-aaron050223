@@ -109,33 +109,73 @@ def mostrar_datos(datos: dict):
 
         print("--- Fin del Contenido ---\n")
 
+def inicializar_datos(nombre_fichero: str):
+    try:
+        with open(nombre_fichero, "r") as archivo:
+            datos = json.load(archivo)
+        with open("src/practica3.4/json/datos.json", "w") as archivo:
+            json.dump(datos, archivo, indent = 4)
+    except FileNotFoundError:
+        print("ERROR | Archivo no encontrado")
+    except json.JSONDecodeError:
+        print("ERROR | Problemas al decodificar el archivo JSON.")
+    
+    print("Datos inicializados desde 'datos_usuarios_orig.json' a 'datos_usuarios.json'.")
+
+def limpiarConsola():
+    print("\n"*50)
 
 def main():
     """
     Función principal que realiza las operaciones de gestión de un archivo JSON.
     """
     # Nombre del fichero JSON
-    nombre_fichero = "src/otros/datos_usuarios.json"
+    nombre_fichero = "src/practica3.4/json/datos_usuarios_orig.json"
 
-    # 1. Cargar datos desde el fichero JSON
+    # Paso 1
+    limpiarConsola()
+
+    # Paso 2
+    inicializar_datos(nombre_fichero)
+
+    # Paso 3
     datos = cargar_json(nombre_fichero)
 
     if datos is None:
         # Inicializamos datos vacíos si hay error
         datos = {"usuarios": []}
+    
+    # Paso 4
+    mostrar_datos(datos)
 
-    # 2. Actualizar la edad de un usuario
+    # Paso PAUSA
+    input("Pulse ENTER para continuar")
+
+    # Paso 5
     actualizar_usuario(datos, id_usuario = 1, nueva_edad = 31)
 
-    # 3. Insertar un nuevo usuario
+    # PAUSA
+    input("Pulse ENTER para continuar")
+
+    # Paso 6
     nuevo_usuario = {"id": 3, "nombre": "Pedro", "edad": 40}
     insertar_usuario(datos, nuevo_usuario)
 
-    # 4. Eliminar un usuario
+    # PAUSA
+    input("Pulse ENTER para continuar")
+
+    # Paso 7
     eliminar_usuario(datos, id_usuario = 2)
 
-    # 5. Guardar los datos de nuevo en el fichero JSON
+    # PAUSA
+    input("Pulse ENTER para continuar")
+
+    # Paso 8
     guardar_json(nombre_fichero, datos)
+
+    mostrar_datos(datos)
+
+    inicializar_datos(nombre_fichero)
 
     print("Operaciones completadas. Archivo actualizado.\n")
 
