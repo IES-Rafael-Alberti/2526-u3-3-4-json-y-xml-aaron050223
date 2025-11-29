@@ -123,6 +123,9 @@ def inicializar_datos(nombre_fichero: str):
     except Exception as e:
         print(f"ERROR: {e}.")
 
+def crear_arbol(nodo_raiz: str) -> ET.Element:
+    return ET.Element("usuarios")
+
 def main():
     """
     Función principal.
