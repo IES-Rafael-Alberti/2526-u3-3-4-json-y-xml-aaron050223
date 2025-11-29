@@ -126,6 +126,9 @@ def inicializar_datos(nombre_fichero: str):
 def crear_arbol(nodo_raiz: str) -> ET.Element:
     return ET.Element("usuarios")
 
+def limpiar_consola():
+    print("\n"*50)
+
 def main():
     """
     Función principal.
