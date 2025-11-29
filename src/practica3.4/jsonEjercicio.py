@@ -113,7 +113,7 @@ def inicializar_datos(nombre_fichero: str):
     try:
         with open(nombre_fichero, "r") as archivo:
             datos = json.load(archivo)
-        with open("src/practica3.4/json/datos.json", "w") as archivo:
+        with open("src/practica3.4/json/datos_usuarios.json", "w") as archivo:
             json.dump(datos, archivo, indent = 4)
     except FileNotFoundError:
         print("ERROR | Archivo no encontrado")
