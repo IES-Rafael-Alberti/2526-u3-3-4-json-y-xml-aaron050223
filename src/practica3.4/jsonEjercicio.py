@@ -94,6 +94,21 @@ def eliminar_usuario(datos: dict, id_usuario: int):
 
     print(f"Usuario con ID {id_usuario} no encontrado.")
 
+def mostrar_datos(datos: dict):
+    if not datos:
+        print("No hay usuarios")
+
+    else:
+        lista_usuarios = datos["usuarios"]
+
+        print("--- Contenido Actual del JSON ---")
+
+        for i in range(len(lista_usuarios)):
+            usuario = lista_usuarios[i]
+            print(f"ID: {usuario["id"]}, Nombre: {usuario["nombre"]}, Edad: {usuario["edad"]}")
+
+        print("--- Fin del Contenido ---\n")
+
 
 def main():
     """
