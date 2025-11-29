@@ -1,1 +1,68 @@
-.idea
+# --- Python Core ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Entornos Virtuales (Virtualenvs) ---
+# Es buena práctica ignorar cualquier nombre común de venv
+env/
+venv/
+.venv/
+.env
+
+# --- Distribución y Empaquetado ---
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Testing y Calidad de Código ---
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+
+# --- IDEs y Editores de Texto ---
+# VS Code
+.vscode/
+# PyCharm / IntelliJ
+.idea/
+# Sublime Text / General
+*.sublime-project
+*.sublime-workspace
+# Archivos temporales de Vim/Emacs
+*.swp
+*~
+
+# --- Archivos del Sistema Operativo ---
+.DS_Store
+Thumbs.db
+
+# --- Logs y Bases de Datos locales ---
+*.log
+*.sqlite3
+db.sqlite3
+
+# --- Pruebas ---
+src/pruebas.py
