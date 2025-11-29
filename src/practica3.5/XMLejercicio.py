@@ -133,30 +133,36 @@ def main():
     """
     Función principal.
     """
+
+    limpiar_consola()
+
     nombre_fichero = "src/practica3.5/datos_usuarios_orig.xml"
 
-    # 1. Cargar XML
+    inicializar_datos(nombre_fichero)
+
     arbol = cargar_xml(nombre_fichero)
 
     if arbol is None:
-        # Inicializamos datos vacíos si hay error
-        raiz = ET.Element("usuarios")
-        arbol = ET.ElementTree(raiz)
-
-    # Obtenemos el nodo principal y padre de todos
+        arbol = crear_arbol("usuarios")
     raiz = arbol.getroot()
 
-    # 2. Actualizar la edad de un usuario
+    mostrar_datos(raiz)
+
+    input("Presione ENTER para continuar")
+
     actualizar_usuario(raiz, id_usuario = 1, nueva_edad = 31)
 
-    # 3. Insertar un nuevo usuario
+    input("Presione ENTER para continuar")
+
     nuevo_usuario = {"id": 3, "nombre": "Pedro", "edad": 40}
     insertar_usuario(raiz, nuevo_usuario)
+    
+    input("Presione ENTER para continuar")
 
-    # 4. Eliminar un usuario
     eliminar_usuario(raiz, id_usuario=2)
 
-    # 5. Guardar los datos de nuevo en el fichero XML
+    input("Presione ENTER para continuar")
+
     guardar_xml(arbol, nombre_fichero)
 
     mostrar_datos(raiz)
