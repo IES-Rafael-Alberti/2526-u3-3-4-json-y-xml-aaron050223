@@ -51,10 +51,6 @@ Actividad para practicar el uso de JSON y XML en Python
    ```
 
 ## Desarrollo de la Actividad
-### Descripción del Desarrollo
-[Explicación de cómo se ha abordado el desarrollo de la actividad, incluyendo las decisiones de diseño, estructura del código y enfoque de resolución de problemas. Se recomienda adjuntar diagramas o capturas de pantalla si es necesario.]
-Los enlaces al codigo se realizaran tal y como se describe [aqui](https://docs.github.com/es/get-started/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet)
-
 
 ### Código Fuente
 
