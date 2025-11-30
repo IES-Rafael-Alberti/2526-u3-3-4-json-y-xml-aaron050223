@@ -22,37 +22,32 @@ Cada ejercicio en un archivo diferente.
 # Título de la Actividad
 
 ## Identificación de la Actividad
-- **ID de la Actividad:** [ID de la actividad]
-- **Módulo:** [Nombre del módulo] (`PROG`, `IS`, `EDES`, etc.)
-- **Unidad de Trabajo:** [Número y nombre de la unidad de trabajo]
-- **Fecha de Creación:** [Fecha de creación]
-- **Fecha de Entrega:** [Fecha de entrega]
+- **ID de la Actividad:** 3.4: XML y JSON
+- **Módulo:** `PROG`
+- **Unidad de Trabajo:** Unidad 3
+- **Fecha de Creación:** 28/11/2025
+- **Fecha de Entrega:** 30/11/2025
 - **Alumno(s):** 
-  - **Nombre y Apellidos:** [Nombre y Apellidos del alumno o integrantes del grupo]
-  - **Correo electrónico:** [Correo electrónico g.educaand.es]
-  - **Iniciales del Alumno/Grupo:** [Iniciales del alumno o del grupo]
+  - **Nombre y Apellidos:** Aarón Gallardo Canto
+  - **Correo electrónico:** agalcan1410g.educaand.es
+  - **Iniciales del Alumno/Grupo:** AGC
 
 ## Descripción de la Actividad
-[Descripción detallada de la actividad, objetivos, y contexto necesario para comprenderla. Explicar en qué consiste la actividad y qué se espera que el alumno desarrolle o implemente.]
+Actividad para practicar el uso de JSON y XML en Python
 
 ## Instrucciones de Compilación y Ejecución
 1. **Requisitos Previos:**
-   - [Lenguaje de programación y versión]
-   - [Entorno de desarrollo o dependencias necesarias]
+   - Python
+   - Cualquier terminal o IDE
 
 2. **Pasos para Compilar el Código:**
    ```bash
-   [Comando para compilar el código]
+   python -m py_compile jsonEjercicio.py
    ```
 
 3. **Pasos para Ejecutar el Código:**
    ```bash
-   [Comando para ejecutar la aplicación]
-   ```
-
-4. **Ejecución de Pruebas:**
-   ```bash
-   [Comandos para ejecutar pruebas, si las hubiera]
+   python src/practica3.4/jsonEjercicio.py
    ```
 
 ## Desarrollo de la Actividad
@@ -62,31 +57,24 @@ Los enlaces al codigo se realizaran tal y como se describe [aqui](https://docs.g
 
 
 ### Código Fuente
-[Aquí se incluirá un enlace directo a los archivos de código fuente en el repositorio, por ejemplo, si se está usando GitHub: `src/main.java` o algún enlace directo.]
 
-### Ejemplos de Ejecución
-- **Entrada 1:** Descripción de la entrada y valor de prueba.
-- **Salida Esperada 1:** Explicación de la salida esperada y el resultado de la prueba.
+- [Practica 3.4](src/practica3.4)
+- [Practica 3.5](src/practica3.5)
+- [Conversiones de XML a JSON](src/conversiones/xml_a_json.py)
+- [Conversiones de JSON a XML](src/conversiones/json_a_xml.py)
 
-### Resultados de Pruebas
-[Aquí se detallará cómo se ha verificado la funcionalidad del código, incluyendo resultados de pruebas automatizadas o manuales, en caso de que las haya.]
 
-## Documentación Adicional
-- **Manual de Usuario:** [Enlace a la documentación del usuario, si existe]
-- **Autorización de Permisos:** Verificar que el profesor tenga permisos de lectura en el repositorio para revisar el código.
+## Pruebas
+No he realizado tests en este ejercicio
 
 ## Conclusiones
-[Resumen de las conclusiones alcanzadas al desarrollar la actividad, las lecciones aprendidas, y posibles mejoras que se puedan implementar en futuras entregas.]
+JSON la verdad que me ha parecido bastante intuitivo y "facil" de usar, pero XML me ha costado bastante más
 
 ## Referencias y Fuentes
-[Aquí se listarán las fuentes consultadas para el desarrollo de la actividad, tales como documentación oficial, artículos, o cualquier recurso externo relevante.]
+- [Pypi](https://pypi.org/project/xmltodict/)
 
-### Notas Adicionales:
-1. **Nombres de Archivos y Repositorios:**
-   - Asegúrate de que el nombre del archivo o repositorio siga la estructura definida: `XXX-idActividad-Iniciales`.
-2. **Permisos:**
-   - Verifica que el profesor tenga los permisos necesarios para acceder al repositorio o documento.
-3. **Formato:**
-   - Si se entrega en formato PDF o Google Docs, asegúrate de cumplir con el mínimo y máximo de folios establecidos.
-4. **Compilación y Ejecución:**
-   - Detalla claramente cómo compilar y ejecutar el código, incluyendo las instrucciones en el archivo `README.md`.
+- [Gemini](https://gemini.google.com/app?hl=es-ES)
+
+- [Revilofe | JSON](https://revilofe.github.io/section1/u03/teoria/PROG-U3.6.-ManejoJSON/)
+
+- [Revilofe | XML](https://revilofe.github.io/section1/u03/teoria/PROG-U3.7.-ManejoXML/)
